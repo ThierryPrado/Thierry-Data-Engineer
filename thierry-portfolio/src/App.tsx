@@ -68,6 +68,7 @@ function App() {
             <button onClick={() => scrollToSection('sobre')} className="link-navegacao">Sobre</button>
             <button onClick={() => scrollToSection('experiencia')} className="link-navegacao">Experiência</button>
             <button onClick={() => scrollToSection('habilidades')} className="link-navegacao">Habilidades</button>
+            <button onClick={() => scrollToSection('idiomas')} className="link-navegacao">Idiomas</button>
             <button onClick={() => scrollToSection('projetos')} className="link-navegacao">Projetos</button>
             <button onClick={() => scrollToSection('contato')} className="link-navegacao">Contato</button>
           </nav>
@@ -338,6 +339,108 @@ function App() {
           </div>
         </section>
 
+        {/* Languages Section */}
+        <section id="idiomas" className="idiomas">
+          <div className="container">
+            <div className="cabecalho-secao">
+              <h2>Idiomas</h2>
+              <p>Competências linguísticas para comunicação global</p>
+            </div>
+            
+            <div className="grade-idiomas">
+              <div className="cartao-idioma">
+                <div className="cabecalho-idioma">
+                  <span className="bandeira">🇺🇸</span>
+                  <h3>Inglês</h3>
+                </div>
+                <div className="nivel-idioma">
+                  <span className="nivel-texto">Fluente</span>
+                  <div className="barra-progresso">
+                    <div className="progresso" style={{width: '90%'}}></div>
+                  </div>
+                </div>
+                <div className="habilidades-idioma">
+                  <div className="habilidade">
+                    <span>Leitura</span>
+                    <div className="pontos">
+                      <div className="ponto ativo"></div>
+                      <div className="ponto ativo"></div>
+                      <div className="ponto ativo"></div>
+                      <div className="ponto ativo"></div>
+                      <div className="ponto ativo"></div>
+                    </div>
+                  </div>
+                  <div className="habilidade">
+                    <span>Escrita</span>
+                    <div className="pontos">
+                      <div className="ponto ativo"></div>
+                      <div className="ponto ativo"></div>
+                      <div className="ponto ativo"></div>
+                      <div className="ponto ativo"></div>
+                      <div className="ponto ativo"></div>
+                    </div>
+                  </div>
+                  <div className="habilidade">
+                    <span>Conversação</span>
+                    <div className="pontos">
+                      <div className="ponto ativo"></div>
+                      <div className="ponto ativo"></div>
+                      <div className="ponto ativo"></div>
+                      <div className="ponto ativo"></div>
+                      <div className="ponto ativo"></div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <div className="cartao-idioma">
+                <div className="cabecalho-idioma">
+                  <span className="bandeira">🇪🇸</span>
+                  <h3>Espanhol</h3>
+                </div>
+                <div className="nivel-idioma">
+                  <span className="nivel-texto">Intermediário</span>
+                  <div className="barra-progresso">
+                    <div className="progresso" style={{width: '70%'}}></div>
+                  </div>
+                </div>
+                <div className="habilidades-idioma">
+                  <div className="habilidade">
+                    <span>Leitura</span>
+                    <div className="pontos">
+                      <div className="ponto ativo"></div>
+                      <div className="ponto ativo"></div>
+                      <div className="ponto ativo"></div>
+                      <div className="ponto ativo"></div>
+                      <div className="ponto"></div>
+                    </div>
+                  </div>
+                  <div className="habilidade">
+                    <span>Escrita</span>
+                    <div className="pontos">
+                      <div className="ponto ativo"></div>
+                      <div className="ponto ativo"></div>
+                      <div className="ponto ativo"></div>
+                      <div className="ponto"></div>
+                      <div className="ponto"></div>
+                    </div>
+                  </div>
+                  <div className="habilidade">
+                    <span>Conversação</span>
+                    <div className="pontos">
+                      <div className="ponto ativo"></div>
+                      <div className="ponto ativo"></div>
+                      <div className="ponto ativo"></div>
+                      <div className="ponto"></div>
+                      <div className="ponto"></div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+
         {/* Projects Section */}
         <section id="projetos" className="projetos">
           <div className="container">
@@ -512,7 +615,7 @@ function App() {
             </div>
             <div className="rodape-direita">
               <p>&copy; 2025 Thierry Prado. Todos os direitos reservados.</p>
-              <p>Desenvolvido com React e muito Monster :)</p>
+              <p>Desenvolvido com React e muito Monster :)</p>  
             </div>
           </div>
         </div>

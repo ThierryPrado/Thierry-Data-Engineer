@@ -799,6 +799,183 @@ html {
   animation: shimmer 2s infinite;
 }
 
+/* Seção Idiomas */
+.idiomas {
+  background: linear-gradient(135deg, #1e293b 0%, #0f172a 100%);
+  padding: 8rem 0;
+  color: white;
+  position: relative;
+}
+
+.idiomas .cabecalho-secao h2 {
+  background: linear-gradient(135deg, #60a5fa, #3b82f6, #1d4ed8);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+  font-size: 3rem;
+  font-weight: 700;
+  margin-bottom: 1rem;
+}
+
+.idiomas .cabecalho-secao p {
+  color: #cbd5e1;
+  font-size: 1.2rem;
+  margin-bottom: 4rem;
+}
+
+.grade-idiomas {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
+  gap: 2rem;
+  max-width: 1000px;
+  margin: 0 auto;
+}
+
+.cartao-idioma {
+  background: rgba(255, 255, 255, 0.05);
+  backdrop-filter: blur(10px);
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  border-radius: 20px;
+  padding: 2rem;
+  transition: all 0.3s ease;
+  position: relative;
+  overflow: hidden;
+}
+
+.cartao-idioma::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: -100%;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(90deg, transparent, rgba(255,255,255,0.1), transparent);
+  transition: left 0.5s ease;
+}
+
+.cartao-idioma:hover::before {
+  left: 100%;
+}
+
+.cartao-idioma:hover {
+  transform: translateY(-5px);
+  border-color: rgba(96, 165, 250, 0.3);
+  box-shadow: 0 20px 40px rgba(96, 165, 250, 0.1);
+}
+
+.cabecalho-idioma {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  margin-bottom: 1.5rem;
+}
+
+.bandeira {
+  font-size: 2rem;
+  filter: drop-shadow(0 2px 4px rgba(0,0,0,0.3));
+}
+
+.cabecalho-idioma h3 {
+  font-size: 1.5rem;
+  font-weight: 600;
+  color: white;
+  margin: 0;
+}
+
+.nivel-idioma {
+  margin-bottom: 2rem;
+}
+
+.nivel-texto {
+  display: inline-block;
+  background: linear-gradient(135deg, #60a5fa, #3b82f6);
+  color: white;
+  padding: 0.5rem 1rem;
+  border-radius: 20px;
+  font-size: 0.9rem;
+  font-weight: 500;
+  margin-bottom: 1rem;
+}
+
+.barra-progresso {
+  width: 100%;
+  height: 8px;
+  background: rgba(255, 255, 255, 0.1);
+  border-radius: 4px;
+  overflow: hidden;
+  position: relative;
+}
+
+.progresso {
+  height: 100%;
+  background: linear-gradient(90deg, #60a5fa, #3b82f6, #1d4ed8);
+  border-radius: 4px;
+  position: relative;
+  transition: width 0.8s ease;
+}
+
+.progresso::after {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  background: linear-gradient(90deg, transparent, rgba(255,255,255,0.3), transparent);
+  animation: shimmer 2s infinite;
+}
+
+.habilidades-idioma {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+.habilidade {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.habilidade span {
+  color: #cbd5e1;
+  font-size: 0.9rem;
+  font-weight: 500;
+}
+
+.pontos {
+  display: flex;
+  gap: 0.3rem;
+}
+
+.ponto {
+  width: 12px;
+  height: 12px;
+  border-radius: 50%;
+  background: rgba(255, 255, 255, 0.2);
+  transition: all 0.3s ease;
+}
+
+.ponto.ativo {
+  background: linear-gradient(135deg, #60a5fa, #3b82f6);
+  box-shadow: 0 0 10px rgba(96, 165, 250, 0.5);
+}
+
+@media (max-width: 768px) {
+  .grade-idiomas {
+    grid-template-columns: 1fr;
+    gap: 1.5rem;
+  }
+  
+  .cartao-idioma {
+    padding: 1.5rem;
+  }
+  
+  .idiomas .cabecalho-secao h2 {
+    font-size: 2.5rem;
+  }
+}
+
 /* Seção Projetos */
 .projetos {
   background: linear-gradient(135deg, #f1f5f9 0%, #e2e8f0 100%);
