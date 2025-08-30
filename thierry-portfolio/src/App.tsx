@@ -6,7 +6,7 @@ function App() {
   const scrollToSection = (sectionId: string) => {
     const element = document.getElementById(sectionId);
     if (element) {
-      const headerHeight = 80; // Altura do header fixo
+      const headerHeight = 60; // Altura do header fixo
       const elementPosition = element.offsetTop - headerHeight;
       
       window.scrollTo({
