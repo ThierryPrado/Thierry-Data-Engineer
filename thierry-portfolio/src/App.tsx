@@ -155,16 +155,17 @@ function App() {
             </div>
             <div className="conteudo-sobre">
               <div className="texto-sobre">
-                <p>
-                  Sou um <strong>Engenheiro de Dados</strong> apaixonado por transformar dados brutos em 
-                  insights valiosos que impulsionam decisões de negócio. Formando em <strong>Engenharia de Software na PUCPR</strong>, 
+                 <p>
+                  Formando em <strong>Engenheiro de Software</strong> pela <strong>PUCPR</strong>, sou apaixonado por manipular dados brutos 
+                  e transformá-los em dados que trazem insights valiosos que impulsionam decisões de negócio. 
+                  Me identifiquei com a <strong>Engenharia de Dados</strong> desde o inicio da minha carreira profissional,
                   possuo experiência sólida em tecnologias Azure e forte expertise em Power BI, desenvolvendo soluções de dados 
                   escaláveis e eficientes.
                 </p>
                 <p>
-                  Minha jornada profissional é focada em criar pipelines robustos de ETL, 
-                  implementar arquiteturas de dados modernas e desenvolver dashboards interativos 
-                  que facilitam a compreensão de informações complexas.
+                  Com foco em criar pipelines robustos, implementar arquiteturas de dados modernas 
+                  e desenvolver dashboards interativos que facilitam a compreensão de informações complexas. 
+                  Sempre busco aprender sobre tecnologias modernas para me manter atualizado e oferecer as melhores soluções.
                 </p>
                 
                 <div className="destaques">
