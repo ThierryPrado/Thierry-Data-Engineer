@@ -16,7 +16,6 @@ function App() {
     }
   };
 
-  // Animações baseadas em scroll
   useEffect(() => {
     const observerOptions = {
       threshold: 0.1,
@@ -69,6 +68,7 @@ function App() {
             <button onClick={() => scrollToSection('experiencia')} className="link-navegacao">Experiência</button>
             <button onClick={() => scrollToSection('habilidades')} className="link-navegacao">Habilidades</button>
             <button onClick={() => scrollToSection('idiomas')} className="link-navegacao">Idiomas</button>
+            <button onClick={() => scrollToSection('certificacoes')} className="link-navegacao">Certificações</button>
             <button onClick={() => scrollToSection('projetos')} className="link-navegacao">Projetos</button>
             <button onClick={() => scrollToSection('contato')} className="link-navegacao">Contato</button>
           </nav>
@@ -441,6 +441,85 @@ function App() {
           </div>
         </section>
 
+        {/* Certifications Section */}
+        <section id="certificacoes" className="certificacoes">
+          <div className="container">
+            <div className="cabecalho-secao">
+              <h2>Certificações</h2>
+              <p>Cursos e eventos que contribuíram para minha formação profissional</p>
+            </div>
+            
+            <div className="grade-certificacoes">
+              <div className="cartao-certificacao">
+                <div className="icone-certificacao">
+                  🏆
+                </div>
+                <div className="conteudo-certificacao">
+                  <h3>Global Game Jam Curitiba 2023</h3>
+                  <p className="instituicao">PUCPR - Escola Politécnica</p>
+                  <p className="periodo">03/02/2023 - 05/02/2023</p>
+                  <p className="descricao">
+                    Participação no evento Global Game Jam, desenvolvendo jogos digitais 
+                    de forma colaborativa e aplicando conceitos de programação e design.
+                  </p>
+                  <div className="habilidades-certificacao">
+                    <span className="tag-habilidade">Game Development</span>
+                    <span className="tag-habilidade">Trabalho em Equipe</span>
+                    <span className="tag-habilidade">Programação</span>
+                  </div>
+                </div>
+              </div>
+
+              <div className="cartao-certificacao">
+                <div className="icone-certificacao">
+                  📚
+                </div>
+                <div className="conteudo-certificacao">
+                  <h3>CC50: Introdução à Ciência da Computação</h3>
+                  <p className="instituicao">Harvard - Curso Original Legendado</p>
+                  <p className="periodo">23/02/2022 • 70 horas</p>
+                  <p className="descricao">
+                    Curso fundamental de ciência da computação da Universidade de Harvard, 
+                    abordando programação desde Scratch até desenvolvimento web com Flask.
+                  </p>
+                  <div className="habilidades-certificacao">
+                    <span className="tag-habilidade">Scratch</span>
+                    <span className="tag-habilidade">C</span>
+                    <span className="tag-habilidade">Arrays</span>
+                    <span className="tag-habilidade">Algoritmos</span>
+                    <span className="tag-habilidade">Estruturas de Dados</span>
+                    <span className="tag-habilidade">Python</span>
+                    <span className="tag-habilidade">SQL</span>
+                    <span className="tag-habilidade">HTML/CSS/JS</span>
+                    <span className="tag-habilidade">Flask</span>
+                  </div>
+                </div>
+              </div>
+
+              <div className="cartao-certificacao">
+                <div className="icone-certificacao">
+                  🔒
+                </div>
+                <div className="conteudo-certificacao">
+                  <h3>Ethical Hacking</h3>
+                  <p className="instituicao">PUCPR - Curso Eletivo</p>
+                  <p className="periodo">2022 - 2023</p>
+                  <p className="descricao">
+                    Curso eletivo focado em segurança de sistemas, onde aprendi técnicas 
+                    para segurança de código, métodos de invasão ética e proteção de redes.
+                  </p>
+                  <div className="habilidades-certificacao">
+                    <span className="tag-habilidade">Segurança de Código</span>
+                    <span className="tag-habilidade">Penetration Testing</span>
+                    <span className="tag-habilidade">Segurança de Redes</span>
+                    <span className="tag-habilidade">Ethical Hacking</span>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+
         {/* Projects Section */}
         <section id="projetos" className="projetos">
           <div className="container">
@@ -463,8 +542,8 @@ function App() {
                 </div>
                 <p>
                   Dashboard interativo desenvolvido em Power BI para análise de vendas executiva, 
-                  integrando dados de múltiplas fontes via Azure Data Factory. Reduziu tempo de 
-                  relatórios em 80% e melhorou a tomada de decisões estratégicas.
+                  integrando dados de múltiplas fontes via Azure Data Factory. Reduziu tempo
+                  e melhorou a tomada de decisões estratégicas.
                 </p>
                 <div className="pilha-tecnologias">
                   <span>Power BI</span>
@@ -517,7 +596,7 @@ function App() {
                 </div>
                 <p>
                   Automação completa de relatórios financeiros mensais utilizando Power BI e Azure. 
-                  Redução de 95% no tempo de preparação de relatórios e eliminação de erros manuais 
+                  Redução de ~45% no tempo de preparação de relatórios e eliminação de erros manuais 
                   através de validações automatizadas.
                 </p>
                 <div className="pilha-tecnologias">
